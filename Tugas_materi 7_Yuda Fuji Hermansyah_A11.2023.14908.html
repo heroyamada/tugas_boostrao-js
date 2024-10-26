@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boostrap + js Yuda Fuji</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" 
+    crossorigin="anonymous"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="icon" href="img/#">
+</head>
+<body>
+    <!---NAV START-->
+    <nav id="navbar" class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
+        <div class="container">
+          <a class="navbar-brand" href="#">My Daily Journal</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-dark">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#article">Article</a>
+                  </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#gallery">Gallery</a>
+                  </li>
+                  <button id="darkbutton" class="btn btn-dark btn-sm-2" type="button">
+                    <i class="bi bi-moon-stars-fill"></i>
+                  </button>
+                  <button id="lightbutton" class="btn btn-danger btn-sm-2" type="button">
+                    <i class="bi bi-brightness-high"></i>
+            </ul>   
+          </div>
+        </div>
+      </nav>
+    <!--NAV END-->
+
+    <!--HERO START-->
+    <section id="hero">
+        <div class="hero  container-fluid bg-dark-subtle p-5">
+            <div class="d-sm-flex flex-sm-row-reverse align-items-center">
+                <img src="img/sampul.jpeg" class="img-fluid rounded-4" width="500">
+                <div>
+                    <h1 class="fw-bold display-4">Club Supra GTR Indonesia</h1>
+                    <h4 class="lead display-6 pe-1">Merupakan forum berbagi informasi dan collaboration, bagi pengguna Honda supra GTR</h4>
+                    <h6>
+                      <span id="tanggal"></span>
+                      <span id="jam"></span>
+                    </h6>  
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--HERO END-->
+
+    <!--ARTICLE START-->
+    <section id="article" class="text-center">
+        <div class="article container-fluid p-5">
+            <h1 class="fw-bold display-4 pb-3 text-center">Article</h1>
+            <div class="row row-cols-1 row-cols-md-3 g-4 justify-content-center">
+                <div class="col">
+                  <div class="card h-100">
+                    <img src="img/gtrblue.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Supra GTR Komorod</h5>
+                      <p class="card-text">Komorod adalah istilah yang digunakan untuk merujuk pada kendaraan, khususnya sepeda motor, yang telah dimodifikasi untuk tujuan balap, terutama dalam arena road race. Modifikasi ini biasanya meliputi peningkatan performa mesin, penyesuaian sistem suspensi, dan penggantian komponen untuk meningkatkan handling dan kecepatan. Selain itu, komorod juga seringkali memiliki tampilan yang lebih agresif dengan desain bodi yang disesuaikan, stripping balap, dan elemen estetika lainnya yang mendukung gaya balap. Istilah ini mencerminkan komunitas dan budaya modifikasi di kalangan para penggemar balap, di mana para pemilik motor berusaha menciptakan kendaraan yang tidak hanya cepat tetapi juga unik dan menarik secara visual.</p>
+                    </div>
+                    <div class="card-footer">
+                      <small class="text-body-secondary">Last updated 3 mins ago</small>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100">
+                    <img src="img/gtrred.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Supra GTR Malaystyle</h5>
+                      <p class="card-text">Supra GTR Malaystyle adalah modifikasi motor bebek sport yang menampilkan gaya khas Malaysia dengan sentuhan elegan dan sporty. Ciri utamanya meliputi bodi ramping dengan stiker minimalis bernuansa cerah atau metalik, penggunaan velg jari-jari atau velg racing dengan ban semi-slick, serta knalpot aftermarket seperti AHM atau Yoshimura untuk performa dan suara yang lebih garang. Suspensi sering diganti dengan monosok atau upside-down (USD) untuk meningkatkan kenyamanan dan handling. Aksesori seperti spion kecil, footstep underbone, lampu LED, dan handle rem racing semakin memperkuat aura balap. Modifikasi ini menghasilkan motor yang tidak hanya tampil memukau, tetapi juga memberikan performa tinggi, cocok untuk penggunaan harian maupun komunitas modifikasi.</p>
+                    </div>
+                    <div class="card-footer">
+                      <small class="text-body-secondary">Last updated 3 mins ago</small>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100">
+                    <img src="img/gtrblack.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Supra GTR SoloStyle</h5>
+                      <p class="card-text">Supra GTR Solotstyle adalah motor hasil modifikasi dari Honda Supra GTR yang memadukan gaya elegan dan sporty dengan sentuhan khas Solo. Modifikasi ini menonjolkan permainan cat dengan nuansa eksklusif, seperti perpaduan warna-warna cerah dan detail grafis bernuansa etnik, yang memberikan kesan modern tanpa meninggalkan identitas budaya. Selain tampilannya, Supra GTR Solotstyle juga dipoles dari sisi performa, dengan peningkatan pada suspensi, knalpot, dan sektor mesin agar lebih bertenaga. Konsep ini mencerminkan jiwa kreatif dan dinamis anak muda sekaligus tetap mempertahankan kenyamanan sebagai motor harian.</p>
+                    </div>
+                    <div class="card-footer">
+                      <small class="text-body-secondary">Last updated 3 mins ago</small>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100">
+                    <img src="img/me.jpeg" class="card-img-top"  alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Supra GTR SoloStyle</h5>
+                      <p class="card-text">berikut adalah foto saya bersama motor saya sendiri</p>
+                    </div>
+                    <div class="card-footer">
+                      <small class="text-body-secondary">Last updated 3 mins ago</small>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100">
+                    <img src="img/me1.jpeg" class="card-img-top"  alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Supra GTR SoloStyle</h5>
+                      <p class="card-text">berikut adalah foto saya bersama motor saya sendiri di area waduk jatibarang</p>
+                    </div>
+                    <div class="card-footer">
+                      <small class="text-body-secondary">Last updated 3 mins ago</small>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100">
+                    <img src="img/me2.jpeg" class="card-img-top"  alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Supra GTR VietnamStyle</h5>
+                      <p class="card-text">Saya ketika meminjam motor teman saya yang berkonsep vietnamstyle, yaitu terdiri dari long arm, velg dengan lebar 1.60 inch rata dan ban kecil</p>
+                    </div>
+                    <div class="card-footer">
+                      <small class="text-body-secondary">Last updated 3 mins ago</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+    </section>
+    <!---ARTICLE END-->
+
+    <!---GALLERY START-->
+    <section id="gallery" class="text-center">
+        <div class="gallery container-fluid bg-dark-subtle p-5">
+            <h1 class="fw-bold display-4 pb-3 text-center">Gallery</h1>
+            <div id="carouselExample" class="carousel slide">
+                <div class="carousel-inner rounded-4">
+                  <div class="carousel-item active">
+                    <img src="img/clb1.jpeg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/clb2.jpeg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/clb3.jpeg" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        </div>
+    </section>
+    <!---GALLERY END-->
+    <footer id="footer">
+        <div id="icon" class="footer text-center pt-4">
+            <a href="https://www.instagram.com/heroo_yamada/" class="h2 p-2 text-dark"><i class="bi bi-instagram"></i></a>
+            <a href="https://www.twitter.com" class="h2 p-2 text-dark"><i class="bi bi-twitter"></i></a>
+            <a href="https://www.whatsapp.com" class="h2 p-2 text-dark"><i class="bi bi-whatsapp"></i></a>
+            <a href="https://www.tiktok.com/@ici.x.kiwir?is_from_webapp=1&sender_device=pc" class="h2 p-2 text-dark"><i class="bi bi-tiktok"></i></a>
+        </div>
+        <div class="footer text-center pb-4">Yuda Fuji Hermanysah &copy; 2024</div>
+    </footer>
+
+    <!---Script JS--->
+    <script type="text/javaScript">
+      document.getElementById("darkbutton").onclick = function(){
+          const herocollection = document.getElementsByClassName("hero");
+          for (let i = 0; i < herocollection.length; i++){
+              herocollection[i].classList.remove("bg-dark-subtle");
+              herocollection[i].classList.add("bg-dark");
+              herocollection[i].classList.add("text-white");
+          }
+          const articleCollection = document.getElementsByClassName("article");
+          for (let i = 0; i < articleCollection.length; i++) {
+              articleCollection[i].classList.remove("bg-white", "text-dark");
+              articleCollection[i].classList.add("bg-secondary", "text-white");
+          }
+          const galleryCollection = document.getElementsByClassName("gallery");
+          for (let i = 0; i < galleryCollection.length; i++) {
+              galleryCollection[i].classList.remove("bg-dark-subtle", "text-dark");
+              galleryCollection[i].classList.add("bg-dark", "text-white");
+          }
+          
+
+          const footerCollection = document.getElementsByClassName("footer");
+          console.log("Footer elements:", footerCollection);
+
+          for (let i = 0; i < footerCollection.length; i++) {
+            console.log("Updating footer:", footerCollection[i]);
+            
+            footerCollection[i].classList.remove("text-dark");
+            footerCollection[i].classList.add("bg-secondary", "text-white");
+            const icons = footerCollection[i].getElementsByTagName("i");
+            for (let j = 0; j < icons.length; j++) {
+            icons[j].classList.add("text-white");
+            }
+          }
+
+          const cardCollection = document.getElementsByClassName("card-body");
+          for (let i = 0; i < cardCollection.length; i++) {
+              cardCollection[i].classList.remove("bg-white", "text-dark");
+              cardCollection[i].classList.add("bg-dark", "text-white");
+          }
+          const cardfCollection = document.getElementsByClassName("card-footer");
+          for (let i = 0; i < cardfCollection.length; i++) {
+              cardfCollection[i].classList.remove("bg-white");
+              cardfCollection[i].classList.add("bg-secondary", "text-white");
+          }
+          
+          
+    };
+    </script>
+
+    <script type="text/javaScript">
+      document.getElementById("lightbutton").onclick = function() {
+      console.log("Light button clicked");
+
+      const herocollection = document.getElementsByClassName("hero");
+      for (let i = 0; i < herocollection.length; i++) {
+        herocollection[i].classList.remove("bg-dark", "text-white");
+        herocollection[i].classList.add("bg-dark-subtle", "text-dark");
+      }
+
+      const articleCollection = document.getElementsByClassName("article");
+      for (let i = 0; i < articleCollection.length; i++) {
+        console.log("Updating article:", articleCollection[i]);
+        articleCollection[i].classList.remove("bg-secondary", "text-white");
+        articleCollection[i].classList.add("bg-white", "text-dark");
+      }
+
+      const galleryCollection = document.getElementsByClassName("gallery");
+      for (let i = 0; i < galleryCollection.length; i++) {
+        console.log("Updating gallery:", galleryCollection[i]);
+        galleryCollection[i].classList.remove("bg-dark", "text-white");
+        galleryCollection[i].classList.add("bg-dark-subtle", "text-dark");
+      }
+      const footerCollection = document.getElementsByClassName("footer");
+          console.log("Footer elements:", footerCollection);
+
+          for (let i = 0; i < footerCollection.length; i++) {
+            console.log("Updating footer:", footerCollection[i]);
+            
+            footerCollection[i].classList.remove("bg-secondary","text-white");
+            footerCollection[i].classList.add("text-dark");
+            const icons = footerCollection[i].getElementsByTagName("i");
+            for (let j = 0; j < icons.length; j++) {
+            icons[j].classList.remove("text-white");
+            icons[j].classList.add("text-dark");
+            }
+          }
+
+        const cardCollection = document.getElementsByClassName("card-body");
+        for (let i = 0; i < cardCollection.length; i++) {
+        console.log("Updating card-body:", cardCollection[i]);
+        cardCollection[i].classList.remove("bg-dark", "text-white");
+        cardCollection[i].classList.add("bg-white", "text-dark");
+      }
+        const cardfCollection = document.getElementsByClassName("card-footer");
+        for (let i = 0; i < cardfCollection.length; i++) {
+        console.log("Updating card-footer:", cardfCollection[i]);
+        cardfCollection[i].classList.remove("bg-secondary", "text-white");
+        cardfCollection[i].classList.add("text-dark");
+      }
+    };
+    </script>
+
+    <script type="text/javaScript">
+      window.setTimeout("tampilWaktu()", 1000);
+
+      function tampilWaktu(){
+        var waktu = new Date();
+        var bulan = waktu.getMonth() + 1;
+
+        setTimeout("tampilWaktu()", 1000);
+        document.getElementById("tanggal").innerHTML =
+          waktu.getDate() + "/" + bulan + "/" + waktu.getFullYear();
+        document.getElementById("jam").innerHTML = 
+          waktu.getHours() +
+          ":" +
+          waktu.getMinutes() +
+          ":" +
+          waktu.getSeconds();
+      }
+    </script>
+</body>
+</html>
